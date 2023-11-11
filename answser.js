@@ -43,7 +43,15 @@ for (let i = 1; i <= 100; i++) {
   console.log(plantee);
 
   console.log(porgee);
-  
+
   console.log(dart);
+
+// Yell at the Ninja turtles
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (const turtle of ninjaTurtles) {
+  const upperCaseName = turtle.toUpperCase();
+  console.log(upperCaseName);
+}
 
   
