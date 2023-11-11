@@ -118,5 +118,24 @@ const whereIsWaldo = [
   
   console.log("Modified whereIsWaldo array:", whereIsWaldo);
   
-  //
+  //kitty cat meow meow meow 
+  const kittyTalk = [
+    "...human...why you taking pictures of me?...",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away..."
+  ];
+  
+  for (let i = 1; i <= 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!");
+  
+  
+    if (i % 2 === 0) {
+   
+      let meow = Math.floor(Math.random() * kittyTalk.length);
+      
+ 
+      console.log(kittyTalk[meow]);
+    }
+  }
+  
   
