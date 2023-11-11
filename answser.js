@@ -104,5 +104,19 @@ console.log("Final array:", favMovies);
 
 console.log("Index of Fast and Furious:", favMovies.indexOf("Fast and Furious"));
 
-
+//wheres waldo
+const whereIsWaldo = [
+    ["Timmy", "Frank"],
+    "Eggbert",
+    ["Lucinda", "Jacc", "Neff", "Snoop"],
+    ["Petunia", ["Baked Goods", "Waldo"]]
+  ];
+  
+  const waldo = whereIsWaldo[3][1][1];
+  
+  console.log("Waldo:", waldo);
+  
+  console.log("Modified whereIsWaldo array:", whereIsWaldo);
+  
+  //
   
