@@ -54,4 +54,55 @@ for (const turtle of ninjaTurtles) {
   console.log(upperCaseName);
 }
 
+//Methods, Revisited
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log("Index of Titanic:", favMovies.indexOf('Titanic'));
+
+favMovies.sort();
+
+console.log("Sorted array:", favMovies);
+
+favMovies.pop();
+
+console.log("Array after pop:", favMovies);
+
+
+favMovies.push("Guardians of the Galaxy");
+
+console.log("Array after push:", favMovies);
+
+favMovies.reverse();
+
+console.log("Reversed array:", favMovies);
+
+favMovies.shift();
+
+console.log("Array after shift:", favMovies);
+
+const unshiftResult = favMovies.unshift("Avatar");
+
+console.log("Array after unshift:", favMovies);
+
+console.log("Return value of unshift:", unshiftResult);
+
+const djangoIndex = favMovies.indexOf("Django Unchained");
+
+favMovies.splice(djangoIndex, 1, "Avatar");
+
+console.log("Array after splice:", favMovies);
+
+const middleIndex = Math.ceil(favMovies.length / 2);
+
+const slicedArray = favMovies.slice(middleIndex);
+
+console.log("Sliced array:", slicedArray);
+
+console.log("Stored sliced array:", slicedArray);
+
+console.log("Final array:", favMovies);
+
+console.log("Index of Fast and Furious:", favMovies.indexOf("Fast and Furious"));
+
+
   
