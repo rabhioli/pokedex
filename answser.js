@@ -159,3 +159,40 @@ if (nums.length % 2 === 1) {
 }
 //im not too sure but im only getting 14 for the output instead of the 15
 
+//Return of the Closets
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  const thomsCloset = [
+    ["grey button-up", "dark grey button-up", "light blue button-up", "blue button-up"],
+    ["grey jeans", "jeans", "PJs"],
+    ["wool mittens", "wool scarf", "raybans"]
+  ];
+  
+  // Alien Attire
+  const kristynsShoe = kristynsCloset.shift(); // Remove Kristyn's left shoe
+  thomsCloset[2].push(kristynsShoe); // Add Kristyn's left shoe to Thom's accessories array
+  
+  // Dress Us Up
+  const kristynOutfit = [
+    kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)],
+    kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)],
+    kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]
+  ];
+  
+  const thomOutfit = [
+    thomsCloset[0][Math.floor(Math.random() * thomsCloset[0].length)],
+    thomsCloset[1][Math.floor(Math.random() * thomsCloset[1].length)],
+    thomsCloset[2][Math.floor(Math.random() * thomsCloset[2].length)]
+  ];
+  
+  console.log(`Kristyn will be wearing: ${kristynOutfit.join(", ")}.`);
+  console.log(`Thom will be wearing: ${thomOutfit.join(", ")}.`);
+  
