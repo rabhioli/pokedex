@@ -196,3 +196,32 @@ const kristynsCloset = [
   console.log(`Kristyn will be wearing: ${kristynOutfit.join(", ")}.`);
   console.log(`Thom will be wearing: ${thomOutfit.join(", ")}.`);
   
+  // Dirty laundry 
+  const kristynCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  const thomCloset = [
+    ["grey button-up", "dark grey button-up", "light blue button-up", "blue button-up"],
+    ["grey jeans", "jeans", "PJs"],
+    ["wool mittens", "wool scarf", "raybans"]
+  ];
+  
+  // Dirty Laundry
+  console.log("Kristyn's laundry:");
+  for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+  }
+  
+  // Inventory
+  console.log("Thom's closet inventory:");
+  console.log("Shirts:", thomsCloset[0]);
+  console.log("Pants:", thomsCloset[1]);
+  console.log("Accessories:", thomsCloset[2]);
+  
