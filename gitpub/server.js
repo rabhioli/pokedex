@@ -7,7 +7,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/drinks', (req, res) => {
-  res.render('index', { drinks: drinks }); // Pass drinks data to index.ejs
+  res.render('index', { drinks: drinks });
+});
+
+// New route for /drinks/:id
+app.get('/drinks/:id', (req, res) => {
+  res.send(req.params.id); // Sends the id back as a response
 });
 
 const port = 3000;
