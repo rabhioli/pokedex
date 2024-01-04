@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <title>GitPub</title>
     <style>
-        body {
-            background-color: #f0f0f0;
-            color: #333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-        }
+        /* Your existing styles */
     </style>
 </head>
 
 <body>
     <h1>Welcome to GitPub</h1>
+    <ul>
+        <% drinks.forEach(function(drink) { %>
+            <li><%= capitalizeFirstLetter(drink.name) %></li>
+        <% }); %>
+    </ul>
 
+    <!-- Script to capitalize the first letter of a string -->
+    <script>
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+    </script>
 </body>
 
 </html>
