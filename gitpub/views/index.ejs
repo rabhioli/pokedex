@@ -12,17 +12,14 @@
 <body>
     <h1>Welcome to GitPub</h1>
     <ul>
-        <% drinks.forEach(function(drink) { %>
-            <li><%= capitalizeFirstLetter(drink.name) %></li>
+        <% drinks.forEach(function(drink, index) { %>
+            <li>
+                <a href="/drinks/<%= index %>">
+                    <%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %>
+                </a>
+            </li>
         <% }); %>
     </ul>
-
-    <!-- Script to capitalize the first letter of a string -->
-    <script>
-        function capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-    </script>
 </body>
 
 </html>
